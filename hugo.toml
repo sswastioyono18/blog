@@ -1,5 +1,5 @@
 title = "My Blog"
-theme = "PaperMod"
+theme = "maverick"
 baseURL = "https://sswastioyono18.github.io/"
 
 [pagination]
