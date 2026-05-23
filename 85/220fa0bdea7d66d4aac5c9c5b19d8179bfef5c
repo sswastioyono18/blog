@@ -1,0 +1,28 @@
+hugo.toml
+  s_ec3da71cb18ab7::t_a5f3b74a8c86e9 84
+  s_ec3da71cb18ab7::t_e7e35a555c2cbf 2,4,10-11,14-33,43-58,67,76,86
+content/search.md
+  s_ec3da71cb18ab7::t_e7e35a555c2cbf 1-6
+.gitmodules
+  s_ec3da71cb18ab7::t_ac71c579630977 4-6
+content/archives.md
+  s_ec3da71cb18ab7::t_e7e35a555c2cbf 1-5
+assets/css/extended/engineering.css
+  s_ec3da71cb18ab7::t_e7e35a555c2cbf 1-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "85220fa0bdea7d66d4aac5c9c5b19d8179bfef5c",
+  "prompts": {},
+  "sessions": {
+    "s_ec3da71cb18ab7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5358-b713-7c33-ac4c-0260da16282b",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Sactio Swastioyono <email.tyo@gmail.com>"
+    }
+  }
+}
