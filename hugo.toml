@@ -1,29 +1,61 @@
 title = "My Blog"
-theme = "maverick"
+theme = "PaperMod"
 baseURL = "https://sswastioyono18.github.io/blog/"
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
 
 [params]
+  env = "production"
+  title = "My Blog"
   description = "A personal blog about tech, engineering, and learning"
   author = "Sactios Wastioyono"
-  items = 10
+  keywords = ["Go", "Backend Engineering", "Platform Engineering", "GCP", "Databases"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+  mainSections = ["posts"]
+
+  [params.homeInfoParams]
+    Title = "Backend / Platform Engineering Notes"
+    Content = "Notes on Go, databases, cloud platforms, and the tradeoffs behind production software."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/sswastioyono18"
 
 [permalinks]
   pages = "/:slug"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = -110
-  [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = -200
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
 
 [markup]
   [markup.goldmark.renderer]
@@ -32,7 +64,7 @@ baseURL = "https://sswastioyono18.github.io/blog/"
     codeFences = true
     guessSyntax = false
     lineNos = false
-    noClasses = true
+    noClasses = false
     style = 'monokailight'
     tabWidth = 4
 
@@ -41,7 +73,7 @@ baseURL = "https://sswastioyono18.github.io/blog/"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-  section = ["HTML"]
+  section = ["HTML", "RSS"]
 
 [outputFormats.RSS]
   mediatype = "application/rss"
@@ -49,6 +81,6 @@ baseURL = "https://sswastioyono18.github.io/blog/"
 
 [outputFormats.JSON]
   mediatype = "application/json"
-  baseName = "feed"
+  baseName = "index"
 
 ignoreErrors = ["error-remote-getjson"]

@@ -1,0 +1,40 @@
+:root {
+    --theme: rgb(250, 251, 252);
+    --entry: rgb(255, 255, 255);
+    --primary: rgb(24, 30, 38);
+    --secondary: rgb(87, 96, 111);
+    --tertiary: rgb(231, 235, 240);
+    --content: rgb(42, 49, 60);
+    --code-bg: rgb(241, 244, 248);
+    --code-block-bg: rgb(20, 27, 36);
+    --border: rgb(218, 224, 232);
+}
+
+:root[data-theme="dark"] {
+    --theme: rgb(15, 20, 27);
+    --entry: rgb(23, 30, 40);
+    --primary: rgb(231, 236, 243);
+    --secondary: rgb(164, 174, 188);
+    --tertiary: rgb(43, 53, 68);
+    --content: rgb(214, 221, 231);
+    --code-bg: rgb(34, 43, 55);
+    --code-block-bg: rgb(10, 14, 20);
+    --border: rgb(55, 67, 84);
+}
+
+.logo a {
+    font-weight: 700;
+}
+
+.home-info .entry-content {
+    max-width: 680px;
+}
+
+.post-entry {
+    border: 1px solid var(--border);
+}
+
+.post-tags a,
+.terms-tags a {
+    border: 1px solid var(--border);
+}
