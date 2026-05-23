@@ -1,27 +1,54 @@
 title = "My Blog"
 theme = "maverick"
-baseURL = "https://sswastioyono18.github.io/"
+baseURL = "https://sswastioyono18.github.io/blog/"
 
 [pagination]
   pagerSize = 10
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+
+[params]
+  description = "A personal blog about tech, engineering, and learning"
+  author = "Sactios Wastioyono"
+  items = 10
+
+[permalinks]
+  pages = "/:slug"
 
 [menu]
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-  [[menu.main]]
-    identifier = "courses"
-    name = "Courses"
-    url = "/courses/"
+    weight = -110
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-  [[menu.main]]
-    identifier = "speaking"
-    name = "Speaking"
-    url = "/speaking/"
+    weight = -200
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    noClasses = true
+    style = 'monokailight'
+    tabWidth = 4
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+ignoreErrors = ["error-remote-getjson"]
