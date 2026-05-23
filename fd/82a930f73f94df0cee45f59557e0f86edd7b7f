@@ -1,0 +1,26 @@
+content/posts/my-new-post.md
+  h_f7403e17cea99e 3
+archetypes/default.md
+  s_ec3da71cb18ab7::t_ee00a74d5b42c5 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "fd82a930f73f94df0cee45f59557e0f86edd7b7f",
+  "prompts": {},
+  "humans": {
+    "h_f7403e17cea99e": {
+      "author": "Sactio Swastioyono <email.tyo@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_ec3da71cb18ab7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5358-b713-7c33-ac4c-0260da16282b",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Sactio Swastioyono <email.tyo@gmail.com>"
+    }
+  }
+}
